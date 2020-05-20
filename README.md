@@ -7,6 +7,8 @@ This requires that you already have PaperMC server JAR downloaded and that you h
 Example Usage:
 
 ```
+docker build --tag papermc https://github.com/KeithSSmith/paper-minecraft-server-docker.git
+
 docker create \
   --name=minecraft \
   -e JAVA_MEMORY_START=2g \

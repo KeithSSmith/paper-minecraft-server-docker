@@ -13,4 +13,4 @@ EXPOSE ${MINECRAFT_PORT}/udp
 
 WORKDIR /data
 
-ENTRYPOINT /usr/local/openjdk-11/bin/java -Xms${JAVA_MEMORY_START} -Xmx${JAVA_MEMORY_MAX} ${JAVA_OPTS} -jar /data/${JAR_FILE_NAME}} --nojline nogui
+ENTRYPOINT /usr/local/openjdk-11/bin/java -Xms${JAVA_MEMORY_START} -Xmx${JAVA_MEMORY_MAX} ${JAVA_OPTS} -jar /data/${JAR_FILE_NAME} --nojline nogui

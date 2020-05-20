@@ -13,8 +13,8 @@ docker create \
   --name=minecraft \
   -e JAVA_MEMORY_START=2g \
   -e JAVA_MEMORY_MAX=2g \
-  -e MINECRAFT_PORT=25565 \
   -v /path/to/server/directory:/data \
+  -p 25565:25565/tcp \
   --restart unless-stopped \
   papermc
 
